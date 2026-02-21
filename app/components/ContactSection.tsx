@@ -110,18 +110,36 @@ export default function ContactSection() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="rounded-2xl overflow-hidden border border-[#2a2a2a] min-h-[350px]"
+                        className="flex flex-col gap-6 h-full"
                     >
-                        <iframe
-                            title="Özlem Oto Cam Konum"
-                            src="https://maps.google.com/maps?q=40.9963735,39.755236&hl=tr&z=17&output=embed"
-                            width="100%"
-                            height="100%"
-                            style={{ border: 0, minHeight: '350px', filter: 'invert(90%) hue-rotate(180deg) brightness(0.9)' }}
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        />
+                        <div className="rounded-2xl overflow-hidden border border-[#2a2a2a] flex-grow min-h-[350px]">
+                            <iframe
+                                title="Özlem Oto Cam Konum"
+                                src="https://maps.google.com/maps?q=40.9963735,39.755236&hl=tr&z=17&output=embed"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0, minHeight: '350px', filter: 'invert(90%) hue-rotate(180deg) brightness(0.9)' }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            />
+                        </div>
+
+                        {/* Map CTA */}
+                        <a
+                            id="map-directions-cta"
+                            href="https://www.google.com/maps/dir/?api=1&destination=40.9963735,39.755236"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center gap-3 bg-[#1e3a8a] hover:bg-[#1e40af] text-white font-bold text-base py-4 px-6 rounded-2xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-900/30 w-full"
+                            style={{ fontFamily: 'Montserrat, sans-serif' }}
+                        >
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Yol Tarifi Al
+                        </a>
                     </motion.div>
                 </div>
             </div>
