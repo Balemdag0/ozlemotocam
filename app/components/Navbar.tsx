@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -38,11 +40,14 @@ export default function Navbar() {
                         onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                         className="flex items-center select-none"
                     >
-                        <img
+                        <Image
                             src="/media/logo.png"
                             alt="Özlem Oto Cam Logo"
+                            width={320}
+                            height={80}
                             className="h-16 md:h-24 w-auto object-contain relative z-10 scale-[3.0] origin-left mix-blend-plus-lighter"
                             style={{ filter: 'brightness(0) invert(1)' }}
+                            priority
                         />
                     </a>
 

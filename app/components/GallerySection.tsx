@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import allMedia from '../../data/media.json';
 
 interface MediaItem {
@@ -140,11 +141,12 @@ export default function GallerySection() {
                                         onClick={() => isFront && setLightboxItem(item)}
                                     >
                                         <div className="absolute inset-0">
-                                            <img
+                                            <Image
                                                 src={item.thumbnail}
                                                 alt={item.caption || 'Oto cam işi'}
-                                                className={`w-full h-full object-cover transition-transform duration-700 ${isFront ? 'group-hover:scale-105' : ''}`}
-                                                loading="lazy"
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                className={`object-cover transition-transform duration-700 ${isFront ? 'group-hover:scale-105' : ''}`}
                                             />
                                         </div>
 
@@ -255,14 +257,18 @@ function Lightbox({ item, onClose }: { item: MediaItem; onClose: () => void }) {
                         controls
                         autoPlay
                         muted
+                        playsInline
                         className="w-full max-h-[80vh] object-contain rounded-xl"
                     />
                 ) : (
-                    <img
-                        src={item.thumbnail}
-                        alt={item.caption || 'Oto cam işi'}
-                        className="w-full max-h-[80vh] object-contain rounded-xl"
-                    />
+                    <div className="relative w-full h-[80vh]">
+                        <Image
+                            src={item.thumbnail}
+                            alt={item.caption || 'Oto cam işi'}
+                            fill
+                            className="object-contain rounded-xl"
+                        />
+                    </div>
                 )}
 
                 {item.caption && (

@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Footer() {
     const year = new Date().getFullYear();
     return (
@@ -5,9 +7,11 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
                 {/* Logo mark */}
                 <div className="flex items-center">
-                    <img
+                    <Image
                         src="/media/logo.png"
                         alt="Özlem Oto Cam Logo"
+                        width={240}
+                        height={60}
                         className="h-20 md:h-32 w-auto object-contain scale-[3.0] origin-left md:origin-center"
                         style={{ filter: 'brightness(0) invert(1)' }}
                     />
