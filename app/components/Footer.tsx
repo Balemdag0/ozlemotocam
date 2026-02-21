@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="bg-[#080808] border-t border-[#1a1a1a] py-10">
             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
                 {/* Logo mark */}
-                <div className="flex items-center">
+                <div className="flex items-center mx-auto md:mx-0">
                     <Image
                         src="/media/logo.png"
                         alt="Özlem Oto Cam Logo"
