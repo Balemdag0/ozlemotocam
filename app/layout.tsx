@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Özlem Oto Cam | Trabzon'da Profesyonel Oto Cam Değişim ve Tamir Merkezi",
+  title: "Özlem Oto Cam | Trabzon Ortahisar Oto Cam Değişimi ve Cam Filmi",
   description:
-    "Trabzon'da araç cam değişimi, cam filmi uygulaması, çatlak tamiri ve kaput koruma filmi hizmetleri. Gümüşhane ve çevre illere hizmet vermekteyiz.",
-  keywords: "oto cam, cam değişimi, cam filmi, çatlak tamiri, Trabzon, özlem oto cam, kaput koruma",
+    "Trabzon Ortahisar'da profesyonel oto cam değişimi, garantili cam filmi uygulaması ve çatlak tamiri. Gümüşhane ve çevre illere hizmet veren Özlem Oto Cam.",
+  keywords: "oto cam, cam değişimi, cam filmi, çatlak tamiri, Trabzon, Ortahisar, özlem oto cam, kaput koruma, Trabzon cam filmi fiyatları",
   openGraph: {
-    title: "Özlem Oto Cam | Trabzon",
-    description: "Profesyonel oto cam değişim ve tamir hizmetleri",
+    title: "Özlem Oto Cam | Trabzon Ortahisar",
+    description: "Trabzon Ortahisar'da profesyonel oto cam değişim ve cam filmi hizmetleri.",
     locale: "tr_TR",
     type: "website",
   },

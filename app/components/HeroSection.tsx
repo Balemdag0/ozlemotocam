@@ -47,7 +47,7 @@ export default function HeroSection() {
                     style={{ fontFamily: 'Montserrat, sans-serif' }}
                 >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#f97316] animate-pulse" />
-                    Trabzon'un Güvenilir Oto Cam Uzmanı
+                    Trabzon ve Ortahisar'ın Güvenilir Oto Cam Uzmanı
                 </motion.div>
 
                 {/* H1 */}
@@ -74,7 +74,7 @@ export default function HeroSection() {
                         textShadow: '0 2px 10px rgba(0,0,0,0.8), 0 0 20px rgba(255,255,255,0.4), 0 0 40px rgba(255,255,255,0.2)'
                     }}
                 >
-                    Trabzon'un lider oto cam servisi. Orijinal parça garantisiyle cam değişimi, profesyonel çatlak tamiri ve kusursuz cam filmi uygulamaları.
+                    Trabzon Ortahisar bölgesindeki lider oto cam servisi. Orijinal parça garantisiyle cam değişimi, profesyonel çatlak tamiri ve kusursuz cam filmi uygulamaları.
                 </motion.p>
 
                 {/* CTAs */}

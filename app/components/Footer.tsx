@@ -17,10 +17,15 @@ export default function Footer() {
                     />
                 </div>
 
-                {/* Copyright */}
-                <p className="text-[#9ca3af] text-xs text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    © {year} Özlem Oto Cam. Tüm hakları saklıdır.
-                </p>
+                {/* Copyright and Address */}
+                <div className="text-center md:text-left">
+                    <p className="text-[#9ca3af] text-sm mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>
+                        Sanayi Mahallesi, Trabzon Sanayi Sitesi, Ortahisar / Trabzon
+                    </p>
+                    <p className="text-[#6b7280] text-xs" style={{ fontFamily: 'Inter, sans-serif' }}>
+                        © {year} Özlem Oto Cam. Tüm hakları saklıdır.
+                    </p>
+                </div>
 
                 {/* Social links */}
                 <div className="flex items-center gap-4">
