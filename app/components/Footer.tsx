@@ -12,7 +12,7 @@ export default function Footer() {
                         alt="Özlem Oto Cam Logo"
                         width={240}
                         height={60}
-                        className="h-20 md:h-32 w-auto object-contain scale-[3.0] origin-left md:origin-center"
+                        className="h-20 md:h-32 w-auto object-contain scale-[3.0] origin-center"
                         style={{ filter: 'brightness(0) invert(1)' }}
                     />
                 </div>
