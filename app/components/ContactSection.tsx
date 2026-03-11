@@ -38,6 +38,7 @@ export default function ContactSection() {
                         className="flex flex-col gap-6"
                     >
                         {/* Info cards */}
+                        <address className="not-italic">
                         <div className="bg-[#111111] border border-[#2a2a2a] rounded-2xl p-6 flex flex-col gap-5">
                             {/* Shop name */}
                             <div className="flex items-start gap-4">
@@ -49,7 +50,7 @@ export default function ContactSection() {
                                 </div>
                                 <div>
                                     <div className="text-white font-bold text-base" style={{ fontFamily: 'Montserrat, sans-serif' }}>Özlem Oto Cam</div>
-                                    <div className="text-[#9ca3af] text-sm mt-1">Trabzon, Türkiye</div>
+                                    <div className="text-[#9ca3af] text-sm mt-1">Sanayi Mahallesi, Şehit Ömer Yıldız Sokak No:43, Ortahisar / Trabzon</div>
                                 </div>
                             </div>
 
@@ -87,6 +88,7 @@ export default function ContactSection() {
                                 </div>
                             </div>
                         </div>
+                        </address>
 
                         {/* Action Buttons */}
                         <div className="flex flex-col gap-3">

@@ -143,7 +143,7 @@ export default function GallerySection() {
                                         <div className="absolute inset-0">
                                             <Image
                                                 src={item.thumbnail}
-                                                alt={item.caption || 'Oto cam işi'}
+                                                alt={item.caption ? `${item.caption} - Özlem Oto Cam Trabzon` : 'Oto cam değişimi ve tamiri - Özlem Oto Cam Trabzon'}
                                                 fill
                                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                                 className={`object-cover transition-transform duration-700 ${isFront ? 'group-hover:scale-105' : ''}`}
@@ -264,7 +264,7 @@ function Lightbox({ item, onClose }: { item: MediaItem; onClose: () => void }) {
                     <div className="relative w-full h-[80vh]">
                         <Image
                             src={item.thumbnail}
-                            alt={item.caption || 'Oto cam işi'}
+                            alt={item.caption ? `${item.caption} - Özlem Oto Cam Trabzon` : 'Oto cam değişimi ve tamiri - Özlem Oto Cam Trabzon'}
                             fill
                             className="object-contain rounded-xl"
                         />

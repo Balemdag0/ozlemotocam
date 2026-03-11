@@ -19,9 +19,11 @@ export default function Footer() {
 
                 {/* Copyright and Address */}
                 <div className="text-center md:text-left">
-                    <p className="text-[#9ca3af] text-sm mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>
-                        Sanayi Mahallesi, Şehit Ömer Yıldız Sokak No:43, Ortahisar / Trabzon
-                    </p>
+                    <address className="not-italic">
+                        <p className="text-[#9ca3af] text-sm mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>
+                            Sanayi Mahallesi, Şehit Ömer Yıldız Sokak No:43, Ortahisar / Trabzon
+                        </p>
+                    </address>
                     <p className="text-[#6b7280] text-xs" style={{ fontFamily: 'Inter, sans-serif' }}>
                         © {year} Özlem Oto Cam. Tüm hakları saklıdır.
                     </p>

@@ -133,16 +133,11 @@ export default function VideoShowcaseSection() {
 
                                 {/* Title */}
                                 <h3
-                                    className="text-4xl md:text-5xl font-black text-white leading-tight mb-1"
+                                    className="font-black leading-tight mb-4"
                                     style={{ fontFamily: 'Syncopate, sans-serif' }}
                                 >
-                                    {card.title}
-                                </h3>
-                                <h3
-                                    className="text-2xl md:text-3xl font-black leading-tight mb-4"
-                                    style={{ fontFamily: 'Syncopate, sans-serif', color: card.accent }}
-                                >
-                                    {card.subtitle}
+                                    <span className="text-4xl md:text-5xl text-white block mb-1">{card.title}</span>
+                                    <span className="text-2xl md:text-3xl block" style={{ color: card.accent }}>{card.subtitle}</span>
                                 </h3>
 
                                 {/* Description */}
